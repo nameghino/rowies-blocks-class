@@ -14,6 +14,8 @@
 		3508C7771B0D7AC40007A491 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3508C7761B0D7AC40007A491 /* Images.xcassets */; };
 		3508C77A1B0D7AC40007A491 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3508C7781B0D7AC40007A491 /* LaunchScreen.xib */; };
 		3508C7861B0D7AC40007A491 /* BlocksExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3508C7851B0D7AC40007A491 /* BlocksExampleTests.m */; };
+		3508C7911B0D7EBD0007A491 /* XKCDService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3508C7901B0D7EBD0007A491 /* XKCDService.m */; };
+		3508C7941B0D81260007A491 /* MonchoXKCDService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3508C7931B0D81260007A491 /* MonchoXKCDService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		3508C77F1B0D7AC40007A491 /* BlocksExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocksExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3508C7841B0D7AC40007A491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3508C7851B0D7AC40007A491 /* BlocksExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocksExampleTests.m; sourceTree = "<group>"; };
+		3508C78F1B0D7EBD0007A491 /* XKCDService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKCDService.h; sourceTree = "<group>"; };
+		3508C7901B0D7EBD0007A491 /* XKCDService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKCDService.m; sourceTree = "<group>"; };
+		3508C7921B0D81260007A491 /* MonchoXKCDService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonchoXKCDService.h; sourceTree = "<group>"; };
+		3508C7931B0D81260007A491 /* MonchoXKCDService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonchoXKCDService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				3508C7761B0D7AC40007A491 /* Images.xcassets */,
 				3508C7781B0D7AC40007A491 /* LaunchScreen.xib */,
 				3508C7691B0D7AC40007A491 /* Supporting Files */,
+				3508C78F1B0D7EBD0007A491 /* XKCDService.h */,
+				3508C7901B0D7EBD0007A491 /* XKCDService.m */,
+				3508C7921B0D81260007A491 /* MonchoXKCDService.h */,
+				3508C7931B0D81260007A491 /* MonchoXKCDService.m */,
 			);
 			path = BlocksExample;
 			sourceTree = "<group>";
@@ -218,9 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3508C7941B0D81260007A491 /* MonchoXKCDService.m in Sources */,
 				3508C7721B0D7AC40007A491 /* ViewController.m in Sources */,
 				3508C76F1B0D7AC40007A491 /* AppDelegate.m in Sources */,
 				3508C76C1B0D7AC40007A491 /* main.m in Sources */,
+				3508C7911B0D7EBD0007A491 /* XKCDService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlocksExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlocksExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
