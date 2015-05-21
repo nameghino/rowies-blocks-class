@@ -26,6 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.searchTextField.keyboardType = UIKeyboardTypeNumberPad;
     [self.searchButton addTarget:self action:@selector(fireSearch:) forControlEvents:UIControlEventTouchUpInside];
 }
 
