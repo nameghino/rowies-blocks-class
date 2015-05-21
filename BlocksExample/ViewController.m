@@ -28,6 +28,11 @@
     [super viewDidLoad];
     self.searchTextField.keyboardType = UIKeyboardTypeNumberPad;
     [self.searchButton addTarget:self action:@selector(fireSearch:) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.titleLabel.text = @"";
+    self.altTextLabel.text = @"";
+    self.transcriptTextView.text = @"";
+    self.dateLabel.text = @"";
 }
 
 - (void)didReceiveMemoryWarning {
