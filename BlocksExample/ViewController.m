@@ -34,6 +34,7 @@
 }
 
 -(void) fireSearch:(id) sender {
+    [self.searchTextField resignFirstResponder];
     if (self.serviceSwitch.isOn) {
         // use real service
         [self fetchUsingXKCDService:self.searchTextField.text];
